@@ -1,103 +1,72 @@
 ---
 import { Icon } from "astro-icon";
 import home0 from "../assets/CattAngelBlueCopy-2037x1512.jpg";
+import onormalUtanRiktning from "../assets/OnormalUtanRiktning-top.jpg";
 import { Image } from "@astrojs/image/components";
 ---
 
-<div
-    class="max-w-[920px] mx-auto">
-    <header id="header" class="">
-        <header class="bg-black text-white fixed top-0 w-full shadow-md">
-            <nav class="max-w-[920px]">
-                <div class="flex bg-black">
-                    <a href="#" class="text-2xl items-left text-gray-300">Matrosen & Stjärnan</a>
-                    <!-- <div class="hidden md:flex items-center space-x-4">
-                        <a href="#" class=" hover:text-blue-600">Home</a>
-                        <a href="#" class=" hover:text-blue-600">About</a>
-                        <a href="#" class=" hover:text-blue-600">Services</a>
-                        <a href="#" class=" hover:text-blue-600">Contact</a>
-                    </div> -->
-                    <div class="flex items-right ml-auto">
-                        <button class="text-white focus:outline-none"> 
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                            </svg>
-                        </button>
-                    </div>
+<div class="bg-black text-white">
+    <header id="header" class="" x-data="{ atTop: true }">
+        <nav class="w-full fixed top-0 bg-red-950 z-50  p-4 transition duration-1000 ease-in-out"
+        :class="{ 'opacity-0': atTop, 'bg-opacity-60': !atTop }"
+                    @scroll.window="atTop = (window.pageYOffset > 100) ? false: true">
+            <div class="flex max-w-screen-md mx-auto">
+                <div
+                    class="mr-auto px-4 mb-2 max-w-screen-md flex transition duration-1000 ease-in-out">
+                    <a href="#" class="text-2xl items-left text-gray-300">sköldpaddsön</a>
                 </div>
-                <!-- <div class="mt-4">
-                    <div class="flex items-center space-x-2">
-                        <input type="search" placeholder="Search" class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600 w-full">
-                        <button class="bg-blue-600 text-white px-4 py-2 rounded-md">Search</button>
-                    </div>
-                </div> -->
-            </nav>
-        </header>
-    </header>
-    <div class="max-w-[920px] mr-auto ml-auto">
-
-        <Image
-            src={home0}            
-            alt="bakgrundsbild"
-            class=""
-        />
-    </div>
-
-    <div class="relative bg-opacity-75">
-        <div class="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
-            <div
-                class="w-full lg:w-2/3 xl:w-1/2 p-6 rounded-lg bg-black bg-opacity-50 mt-24 md:mt-8"
-            >
-                <h1
-                    class="font-sans text-2xl font-semibold tracking-tight text-white sm:text-4xl"
-                >
-                    Master the basics of baking
-                </h1>
-                <p class="mt-4 tracking-tight text-white sm:mt-6">
-                    <span
-                        class="font-sans font-normal xl:text-4xl md:text-3xl text-xl"
-                        >The Balanced Chef</span
-                    ><br />
-                    <span
-                        class="font-serif italic font-normal xl:text-5xl text-2xl"
-                        >Discover the perfect balance</span
-                    >
-                </p>
-                <p
-                    class="md:mt-8 mt-2 font-sans text-sm font-normal leading-6 text-white"
-                >
-                    The Balanced Chef offers a unique culinary experience that
-                    blends flavors and ingredients to create
-                    <span
-                        class="relative inline-flex justify-center whitespace-nowrap sm:font-bold md:mx-2"
-                    >
-                        <Icon
-                            name="under"
-                            class="absolute -bottom-2 hidden w-28 text-red-400 sm:block"
-                        />
-
-                        nutritious and delicious
-                    </span>
-
-                    meals. Join us on a journey to explore the world of balanced
-                    cooking and elevate your culinary skills.
-                </p>
-                <div class="flex items-center mt-6 space-x-4">
-                    <a
-                        href="/blog/Card"
-                        title="Get balanced cooking"
-                        class="inline-flex items-center justify-center px-4 py-2 font-sans text-sm font-semibold transition-all duration-200 border-2 border-red-500 rounded-full hover:bg-red-500 bg-white hover:text-white"
-                    >
-                        <span class="font-serif italic font-normal sm:text-xl"
-                            >Get balanced cooking</span
+                <div class="flex ml-auto pr-4">
+                    <button class="text-white focus:outline-none">
+                        <svg
+                            class="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                         >
-                        <Icon
-                            name="ph:cooking-pot"
-                            class="w- hover:text-white h-8 ml-2 mt-1 animate-bounce"
-                        />
-                    </a>
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </div>
+            </div>
+        </nav>
+    </header>
+</div>
+
+<div class="flex justify-center mx-auto">
+    <div class="w-full  mx-auto max-w-screen-md">
+        <div class="relative">
+            <Image src={home0} alt="bakgrundsbild" class="w-auto " />
+
+            <div
+                class="absolute bottom-0 left-1/4 w-1/2 h-60 mb-8">
+
+                <div class="bg-red-100 p-2 bg-opacity-20 text-white rounded-lg"><h2>Öppetider</h2></div>
+                <div class="mt-2 bg-red-100 p-2 bg-opacity-20 text-white rounded-lg"><h2>Hitta hit</h2></div>
+                <div class="mt-2 bg-red-100 p-2 bg-opacity-20 text-white rounded-lg"><h2>Meny</h2></div>
+                <div class="mt-2 bg-red-100 p-2 bg-opacity-20 text-white rounded-lg"><h2>Boka lokalen</h2></div>
+                <div class="mt-2 bg-red-100 p-2 bg-opacity-20 text-white rounded-lg"><h2>Kontakt</h2></div>
+            
+            
             </div>
         </div>
     </div>
 </div>
+
+<!-- 
+<div class="flex justify-center mx-auto">
+    <div class="w-full  mx-auto max-w-screen-md">
+        <div class="mx-auto  relative">
+            <Image src={home0} alt="bakgrundsbild" class="w-full h-auto" />
+
+            <div
+                class="absolute bg-red-300 w-12 h-96  top-0 left-1/2 rounded-lg">
+                div
+            </div>
+        </div>
+    </div>
+</div> -->
