@@ -1,0 +1,37 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<div class="bg-black text-white">
+  <header id="header" class="" x-data="{ atTop: true }">
+    <nav
+      class="w-full fixed top-0 bg-red-950 z-50 p-4 transition duration-1000 ease-in-out"
+      :class="{ 'opacity-0': atTop, 'bg-opacity-60': !atTop }"
+      @scroll.window="atTop = (window.pageYOffset > 100) ? false: true">
+      <div class="flex max-w-screen-md mx-auto">
+        <div
+          class="mr-auto px-4 mb-2 max-w-screen-md flex transition duration-1000 ease-in-out"
+        >
+          <a href="#" class="text-2xl items-left text-gray-300">sköldpaddsön</a>
+        </div>
+        <div class="flex ml-auto pr-4">
+          <button class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
