@@ -1,6 +1,7 @@
 ---
 import { Icon } from "astro-icon";
-import OnormalUtanRiktning from "../assets/OnormalUtanRiktning-top.jpg";
+import OnormalUtanRiktning from "../assets/img/OnormalUtanRiktning-top2.jpg";
+import news1Img from "../assets/img/sagostund-dallee.jpg";
 import { Image } from "@astrojs/image/components";
 ---
 
@@ -10,12 +11,34 @@ import { Image } from "@astrojs/image/components";
             <Image
                 src={OnormalUtanRiktning}
                 alt="bakgrundsbild"
-                class="w-auto"/>
+                class="w-auto"
+            />
             <div>
-                <div class="h-screen mx-auto px-4 py-4 max-w-screen-md bg-gradient-to-b from-green-950 to-green-900">
-                    <h2 class="text-4xl font-semibold tracking-wide text-center text-yellow-700 sm:text-5xl">
+                <div
+                    class="h-screen mx-auto px-4 py-4 max-w-screen-md bg-gradient-to-b from-green-950 to-green-900"
+                >
+                    <!-- <h2
+                        class="text-4xl font-semibold tracking-wide text-center text-yellow-700 sm:text-5xl"
+                    >
                         Kalender
-                    </h2>
+                    </h2> -->
+
+                    <!-- =================== News Cards ==============================-->
+                    <!-- bryt ut sen     -->
+                    <div
+                        class="bg-gray-400 w-11/12 h-72 mx-auto mt-5 hover:scale-105 rounded-lg"
+                    >
+                        <div
+                            class="relative "
+                        >
+                            <Image
+                                src={news1Img}
+                                alt="bakgrundsbild"
+                                class="w-auto"
+                            />
+                        </div>
+                    </div>
+                    <!-- =================== END News Cards ==============================-->
                 </div>
             </div>
         </div>
