@@ -6,8 +6,8 @@ import { Icon } from "astro-icon";
 const firstPost = await getFirstBlogPost();
 ---
 
-<section class="bg-white py-6 sm:py-8 lg:py-12">
-  <div class="mx-auto max-w-screen-md px-4 md:px-8">
+<section class="bg-black">
+  <div class="bg-white mx-auto max-w-screen-md px-4 md:px-8">
     <!-- Heading -->
     <div class="mb-10 md:mb-16">
       <h2 class="mb-4 text-center text-3xl font-bold text-gray-900 md:mb-6 lg:text-4xl">Meny</h2>
@@ -26,7 +26,7 @@ const firstPost = await getFirstBlogPost();
       {firstPost.map((post: any) => (
         <article class="bg-white rounded-lg shadow-xl overflow-hidden">
           <a class="block transition hover:scale-105" title={post.title} href={`/blog/${post.slug.current}`}>
-            <div class="h-52 bg-cover bg-center rounded-t-lg" style={{ backgroundImage: `url(${post.imageUrl})` }}></div>
+            <div class="h-80 bg-cover bg-center rounded-t-lg" style={{ backgroundImage: `url(${post.imageUrl})` }}></div>
             <div class="p-4">
               <h2 class="mb-2 text-xl font-semibold text-gray-900 overflow-hidden h-14">
                 {post.title}

@@ -1,11 +1,12 @@
 ---
 import { Icon } from "astro-icon";
-import OnormalUtanRiktning from "../assets/img/OnormalUtanRiktning-top2.jpg";
-import news1Img from "../assets/img/sagostund-dallee.jpg";
+import OnormalUtanRiktning from "../assets/img/OnormalUtanRiktning-top5.jpg";
+import newsImg1 from "../assets/img/grand-opening3.jpg";
+import newsImg2 from "../assets/img/sagostund-dallee.jpg";
 import { Image } from "@astrojs/image/components";
 ---
 
-<div class="flex justify-center mx-auto bg-lime-950cd">
+<div class="flex justify-center mx-auto ">
     <div class="w-full mx-auto max-w-screen-md">
         <div>
             <Image
@@ -14,28 +15,46 @@ import { Image } from "@astrojs/image/components";
                 class="w-auto"
             />
             <div>
-                <div
-                    class="h-screen mx-auto px-4 py-4 max-w-screen-md bg-gradient-to-b from-green-950 to-green-900"
-                >
-                    <!-- <h2
-                        class="text-4xl font-semibold tracking-wide text-center text-yellow-700 sm:text-5xl"
-                    >
-                        Kalender
-                    </h2> -->
-
+                <div class="h-auto mx-auto px-4 py-4 max-w-screen-md bg-gradient-to-b from-green-950 to-green-800">
                     <!-- =================== News Cards ==============================-->
                     <!-- bryt ut sen     -->
-                    <div
-                        class="bg-gray-400 w-11/12 h-72 mx-auto mt-5 hover:scale-105 rounded-lg"
-                    >
-                        <div
-                            class="relative "
-                        >
-                            <Image
-                                src={news1Img}
-                                alt="bakgrundsbild"
-                                class="w-auto"
-                            />
+                    <!-- NEWS 1 -->
+                    <div class="bg-stone-500 w-11/12 mx-auto  hover:scale-105 rounded-2xl shadow-md">
+                        <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                            <Image src={newsImg1} alt="bakgrundsbild" class="w-auto"/>
+                        </div>
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+                            <p class="text-base">
+                              Some quick example text to build on the card title and make up the
+                              bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- NEWS 2 -->
+                    <div class="mt-12 bg-stone-500 w-11/12 mx-auto  hover:scale-105 rounded-2xl shadow-2xl">
+                        <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                            <Image src={newsImg2} alt="bakgrundsbild" class="w-auto"/>
+                        </div>
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight">Card title2</h5>
+                            <p class="text-base">
+                              Some quick example text to build on the card title and make up the
+                              bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- NEWS 3 -->
+                    <div class="mt-12 mb-16 bg-stone-500 w-11/12 mx-auto  hover:scale-105 rounded-2xl shadow-2xl">
+                        <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                            <Image src={newsImg2} alt="bakgrundsbild" class="w-auto"/>
+                        </div>
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight">Card title3</h5>
+                            <p class="text-base">
+                              Some quick example text to build on the card title and make up the
+                              bulk of the card's content.
+                            </p>
                         </div>
                     </div>
                     <!-- =================== END News Cards ==============================-->
