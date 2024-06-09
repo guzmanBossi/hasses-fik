@@ -13,5 +13,5 @@ export default defineConfig({
     apiVersion: '2021-03-25' // use a UTC date string
   }), image({
     serviceEntryPoint: '@astrojs/image/sharp'
-  }), alpinejs()]
+  }), alpinejs() ], experimental: { assets: true },
 });
