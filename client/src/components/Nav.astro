@@ -36,37 +36,40 @@ import { Icon } from "astro-icon";
                 stroke-width="2"
                 d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
-            <svg x-show="open" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" viewBox="0 0 50 50" width="20px" height="20px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
+            <svg
+              x-show="open"
+              class="w-5 h-5"
+               fill="none"
+              stroke="currentColor"
+              viewBox="0 0 50 50"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"
+              ></path></svg
+            >
           </button>
           <div
             x-show="open"
             class="absolute bg-[#355b45] text-white w-56 right-10 top-2 rounded-lg"
           >
             <a href="#openinghours"
-              ><div
-                class="bg-red-100 p-4 bg-opacity-20  hover:scale-105"
-              >
+              ><div class="bg-red-100 p-4 bg-opacity-20 hover:scale-105">
                 Öppettider
               </div></a
             >
             <a href="#menu"
-              ><div
-                class="mt-2 bg-red-100 p-4 bg-opacity-20 hover:scale-105"
-              >
+              ><div class="mt-2 bg-red-100 p-4 bg-opacity-20 hover:scale-105">
                 Meny
               </div></a
             >
             <a href="#contact"
-              ><div
-                class="mt-2 bg-red-100 p-4 bg-opacity-20  hover:scale-105"
-              >
+              ><div class="mt-2 bg-red-100 p-4 bg-opacity-20 hover:scale-105">
                 Hitta hit
               </div></a
             >
             <a href="#contact"
-              ><div
-                class="mt-2 bg-red-100 p-4 bg-opacity-20  hover:scale-105"
-              >
+              ><div class="mt-2 bg-red-100 p-4 bg-opacity-20 hover:scale-105">
                 Kontakt
               </div></a
             >
