@@ -22,7 +22,7 @@ const foodMenuList = getFoodMenu();
                 foodMenuList.map((post: any) => (
                     <>
        <article class="bg-white rounded-lg shadow-xl overflow-hidden">
-          <a class="block transition" title={post.title} href={``}>
+          <a class="block transition" title={post.title} href={post.pageUrl}>
             <div class="h-80 bg-cover bg-center rounded-t-lg hover:scale-105" style={{ backgroundImage: `url(${post.image})` }}></div>
             <div class="p-4">
               <div class="text-xl font-semibold text-gray-900 overflow-hidden mb-4">
@@ -32,10 +32,8 @@ const foodMenuList = getFoodMenu();
               <div>
                 <a 
                   title={post.title}
-                  href={``}
-                  class="inline-flex items-center px-4 py-2 border text-white border-transparent text-lg font-medium rounded-full shadow-sm text-red-500 italic hover:bg-red-500 hover:text-white bg-[#dc2626] mt-8"
-               
-                >
+                  href={post.pageUrl}
+                  class="inline-flex items-center px-4 py-2 border text-white border-transparent text-lg font-medium rounded-full shadow-sm italic hover:bg-red-500 hover:text-white bg-[#dc2626] mt-8">
                   Läs mer...
                 </a>
               </div>
