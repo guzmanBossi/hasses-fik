@@ -4,17 +4,32 @@ import { Image } from "astro:assets";
 ---
 
 <div id="contact" class="flex justify-center mx-auto h-full">
-    <div class="w-full  mx-auto max-w-screen-md my-auto">
-        <div class="relative h-full  text-white">
+    <div class="w-full mx-auto max-w-screen-md my-auto">
+        <div class="relative h-full text-white">
             <Image src={matros} alt="bakgrundsbild" class="h-full" />
-            <div class="absolute mt-[-120px] sm:bottom-4 sm:mt-0 left-0 right-0  w-3/4 mx-auto ">
-                <div class="p-2 text-xl sm:text-3xl hover:scale-105"><h1>Hitta hit / Kontakt</h1></div>
-                <div class="bg-red-100 p-4 bg-opacity-20 rounded-lg hover:scale-105" >
-                    <div class=" p-2 text-base sm:text-2xl hover:scale-105"><h1>Adress: Bysistorget 2, Stockholm</h1></div>
-                    <div class=" p-2 text-base sm:text-2xl hover:scale-105"><h1>Telefon: 0701112233</h1></div>
-                    <div class=" p-2 text-base sm:text-2xl hover:scale-105"><h1>Email: info@skoldpaddson.se</h1></div>
+            <div
+                class="absolute mt-[-120px] sm:bottom-4 sm:mt-0 left-0 right-0 w-3/4 mx-auto"
+            >
+                <div class="p-2 text-xl sm:text-3xl">
+                    <h1>Hitta hit / Kontakt</h1>
                 </div>
-            </div> 
+                <div class="bg-red-100 p-4 bg-opacity-20 rounded-lg">
+                    <div class="flex p-2 text-base sm:text-2xl">
+                        <h1>Adress: Bysistorget 2, Stockholm</h1>
+                        <span class="ml-auto bg-[#494343] p-2 hover:scale-105">
+                            <a href="https://maps.app.goo.gl/Vk5FZk6iQXM8ghzbA" target="_blank"
+                                >Karta</a
+                            >
+                        </span>
+                    </div>
+                    <div class="p-2 text-base sm:text-2xl">
+                        <h1>Telefon: 0701112233</h1>
+                    </div>
+                    <div class="p-2 text-base sm:text-2xl">
+                        <h1>Email: info@skoldpaddson.se</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

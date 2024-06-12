@@ -21,7 +21,7 @@ const foodMenuList = getFoodMenu();
             {
                 foodMenuList.map((post: any) => (
                     <>
-       <article class="bg-white rounded-lg shadow-xl overflow-hidden">
+       <article id={post.anchor} class="bg-white rounded-lg shadow-xl overflow-hidden">
           <a class="block transition" title={post.title} href={post.pageUrl}>
             <div class="h-80 bg-cover bg-center rounded-t-lg hover:scale-105" style={{ backgroundImage: `url(${post.image})` }}></div>
             <div class="p-4">
