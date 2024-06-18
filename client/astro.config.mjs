@@ -6,12 +6,12 @@ import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), sanity({
+  integrations: [tailwind(), alpinejs(), sanity({
     projectId: 'rd0jbcna',
     dataset: 'production',
     useCdn: false,
     apiVersion: '2021-03-25' // use a UTC date string
   }), image({
     serviceEntryPoint: '@astrojs/image/sharp'
-  }), alpinejs() ], experimental: { assets: true },
+  }) ], experimental: { assets: true },
 });
