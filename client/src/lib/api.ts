@@ -32,8 +32,8 @@ function getFoodMenu(): { image: string, title: string, shortDescription: string
     },
     {
       image: "./img/mat/bakverk1.jpg",
-      title: "Smörgåsar och bakverk",
-      shortDescription: "Kalla och varma smörgåsar. Bullar, kakor och tårtor. Allt bakat med kärlek.",
+      title: "Bakverk / Efterrätter",
+      shortDescription: "Bullar, kakor och tårtor. Allt bakat med kärlek. Våra kakor levereras av Princess bageriet.",
       longDescription: "Bullar, kakor, croissants, tårtor, pajer m.m m.m. Vi samarbetar med bageriet på hörnet och får leveranser varje morgon. Allt är bakat på plats och med passion för smak ock konsistens.",
       pageUrl: "food/bakverk",
       anchor: "bakverk"
