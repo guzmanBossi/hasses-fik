@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon/components'
+import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
 import logoImg from "../assets/img/LogoSkoldpaddson500-X3.png";
 ---
@@ -7,7 +7,7 @@ import logoImg from "../assets/img/LogoSkoldpaddson500-X3.png";
 <footer
   class="bg-gradient-to-b from-black to-[#355b45] rounded-lg shadow-lg p-8 relative mt-24"
 >
-  <Icon name="Mave"  class="w-auto h-auto absolute bottom-0 left-0 right-0" />
+  <!-- <Icon name="Mave" class="absolute bottom-0 left-0 right-0 text-[25rem] overflow-hidden" /> -->
   <div class="max-w-screen-md mx-auto relative z-10">
     <div class="flex justify-between mb-8 md:flex-row flex-col items-center">
       <div>
@@ -15,14 +15,17 @@ import logoImg from "../assets/img/LogoSkoldpaddson500-X3.png";
           <Image src={logoImg} alt="logo" class="h-full" />
         </a>
       </div>
-
     </div>
     <!-- <hr class="border-[#445d50] mb-8 hidden sm:block" /> -->
 
     <div
-      class="items-center text-base text-center text-white sm:text-current mb-12 sm:my-0"
+      class="items-center text-base text-center text-white  mb-12 sm:my-0"
     >
-      <a class="flex justify-center mb-4 hover:scale-105" href="https://www.instagram.com/skoldpaddson?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+      <a
+        class="flex justify-center mb-4 hover:scale-105"
+        href="https://www.instagram.com/skoldpaddson?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        target="_blank"
+      >
         <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
@@ -40,3 +43,11 @@ import logoImg from "../assets/img/LogoSkoldpaddson500-X3.png";
     </div>
   </div>
 </footer>
+<!-- <style>
+  [data-icon="Mave"] {
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+  }
+</style> -->
