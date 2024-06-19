@@ -1,17 +1,10 @@
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
-import sanity from 'astro-sanity';
-import image from '@astrojs/image';
+import tailwind from "@astrojs/tailwind";
 import alpinejs from "@astrojs/alpinejs";
+
+import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), alpinejs(), sanity({
-    projectId: 'rd0jbcna',
-    dataset: 'production',
-    useCdn: false,
-    apiVersion: '2021-03-25' // use a UTC date string
-  }), image({
-    serviceEntryPoint: '@astrojs/image/sharp'
-  }) ], experimental: { assets: true },
+  integrations: [tailwind(), alpinejs(), icon()]
 });

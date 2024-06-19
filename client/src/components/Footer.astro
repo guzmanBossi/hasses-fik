@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from 'astro-icon/components'
 import { Image } from "astro:assets";
 import logoImg from "../assets/img/LogoSkoldpaddson500-X3.png";
 ---
@@ -7,7 +7,7 @@ import logoImg from "../assets/img/LogoSkoldpaddson500-X3.png";
 <footer
   class="bg-gradient-to-b from-black to-[#355b45] rounded-lg shadow-lg p-8 relative mt-24"
 >
-  <Icon name="Mave" class="absolute bottom-0 left-0 right-0" />
+  <Icon name="Mave" width="auto" height="auto" class="w-auto h-auto absolute bottom-0 left-0 right-0" />
   <div class="max-w-screen-md mx-auto relative z-10">
     <div class="flex justify-between mb-8 md:flex-row flex-col items-center">
       <div>
@@ -16,15 +16,8 @@ import logoImg from "../assets/img/LogoSkoldpaddson500-X3.png";
         </a>
       </div>
 
-      <!-- <ul class="flex flex-wrap space-x-4 text-sm font-medium items-center">
-        <li class="text-white mb-4">
-          <a href="/blog/Card" class="mr-5 hover:text-red-500">Recipes</a>
-          <a href="/about" class="mr-5 hover:text-red-500">About</a>
-          <a href="/contact" class="mr-5 hover:text-red-500">Contact</a>
-        </li>
-      </ul> -->
     </div>
-    <hr class="border-[#445d50] mb-8 hidden sm:block" />
+    <!-- <hr class="border-[#445d50] mb-8 hidden sm:block" /> -->
 
     <div
       class="items-center text-base text-center text-white sm:text-current mb-12 sm:my-0"

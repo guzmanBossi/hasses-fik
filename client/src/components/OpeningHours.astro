@@ -1,6 +1,6 @@
 ---
 import catAngelImg from "../assets/img/CattAngelBlueCopy-2037x1512.jpg";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 ---
 
 <div id="openinghours" class="flex justify-center mx-auto h-full">
@@ -9,7 +9,7 @@ import { Image } from "@astrojs/image/components";
             <Image src={catAngelImg} alt="bakgrundsbild" class="h-full" />
             <div class="absolute bottom-12 sm:bottom-28 left-0 right-0  w-1/2 mx-auto ">
                 <div class="p-2 text-xl sm:text-3xl"><h1>Öppettider</h1></div>
-                <div class="bg-red-100 p-4 bg-opacity-20 rounded-lg" >
+                <div class="bg-[#333030b5] p-4 bg-opacity-60 rounded-lg" >
                     <div class=" p-2 text-base sm:text-2xl"><h1>Måndag: stängt</h1></div>
                     <div class=" p-2 text-base sm:text-2xl"><h1>Tis-Tor: 11:00 - 20:00</h1></div>
                     <div class=" p-2 text-base sm:text-2xl"><h1>Fre-Lör: 11:00 - 22:00</h1></div>
