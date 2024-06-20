@@ -1,6 +1,7 @@
 ---
 import matros from "../assets/img/matros.jpg";
 import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
 ---
 
 <div id="contact" class="flex justify-center mx-auto h-full">
@@ -8,25 +9,43 @@ import { Image } from "astro:assets";
         <div class="relative h-full text-white">
             <Image src={matros} alt="bakgrundsbild" class="h-full" />
             <div
-                class="absolute bottom-12 sm:bottom-48 left-0 right-0  w-2/3 mx-auto"
+                class="absolute bottom-12 sm:bottom-48 left-0 right-0 w-2/3 mx-auto"
             >
                 <div class="p-2 text-xl sm:text-3xl">
                     <h1>Hitta hit / Kontakt</h1>
                 </div>
                 <div class="relative bg-red-100 p-4 bg-opacity-20 rounded-lg">
                     <div class="p-2 text-base sm:text-2xl w-2/3">
-                        <h1>Adress: Bysistorget 2, Stockholm</h1>
-                        <span class="absolute right-2 top-4 bg-[#494343] p-2 hover:scale-110 rounded-xl text-lg ">
-                            <a href="https://maps.app.goo.gl/Vk5FZk6iQXM8ghzbA" target="_blank"
-                                >Karta</a
+                        <h1>
+                            <Icon
+                                name="house-icon"
+                                class="float-left mr-4 mt-[6px]"
+                            /> Bysistorget 2, Stockholm
+                        </h1>
+                        <span
+                            class="absolute right-2 top-4 bg-[#494343] p-2 hover:scale-110 rounded-xl text-lg"
+                        >
+                            <a
+                                href="https://maps.app.goo.gl/Vk5FZk6iQXM8ghzbA"
+                                target="_blank">Karta</a
                             >
                         </span>
                     </div>
-                    <div class="p-2 text-base sm:text-2xl">
-                        <h1>Telefon: 076 034 58 68</h1>
+                    <div class="p-2 text-base sm:text-2xl hover:scale-105 underline">
+                        <h1>                            
+                            <a href="tel:0760345868"><Icon
+                                name="phone-icon"
+                                class="float-left mr-4 mt-[6px]"
+                            />076 034 58 68</a>
+                        </h1>
                     </div>
-                    <div class="p-2 text-base sm:text-2xl">
-                        <h1>Email: info@skoldpaddson.se</h1>
+                    <div class="p-2 text-base sm:text-2xl hover:scale-105 underline">
+                        <h1>
+                             <a href="mailto:info@skoldpaddson.se"><Icon
+                                name="email-icon"
+                                class="float-left mr-4 mt-[6px]"
+                            />info@skoldpaddson.se</a>
+                        </h1>
                     </div>
                 </div>
             </div>
